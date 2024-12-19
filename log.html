@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8" />
@@ -10,21 +10,23 @@
 
 <body>
 	<div class="login-container" role="main">
-		<h2 aria-label="Log in to your account">Вход на сайт</h2>
-		<form action="#" method="post">
+		<h2 aria-label="Login to your account">Вход</h2>
+		<form action="#" method="post" id="login-form">
 			<div class="form-group">
-				<label for="username">Логин:</label>
-				<input type="text" id="username" name="username" aria-required="true" required />
+				<label for="username" aria-required="true">Логин</label>
+				<input type="text" id="username" name="username" required aria-describedby="username-error" />
+				<span id="username-error" class="error-message" role="alert" aria-live="polite"></span>
 			</div>
 			<div class="form-group">
-				<label for="password">Пароль:</label>
-				<input type="password" id="password" name="password" required />
+				<label for="password" aria-required="true">Пароль</label>
+				<input type="password" id="password" name="password" required aria-describedby="password-error" />
+				<span id="password-error" class="error-message" role="alert" aria-live="polite"></span>
 			</div>
-			<button type="submit">Войти</button>
+			<button type="submit" aria-label="Submit login form">Логин</button>
 			<div class="form-footer">
-				<a href="#">Забыли пароль?</a>
-				<span>или</span>
-				<a href="reg.html">Создать аккаунт</a>
+				<a href="#" id="forgot-password" aria-label="Forgot your password? Click here">Забыли пароль?</a>
+				<span>or</span>
+				<a href="reg.html" aria-label="Register for a new account">Создать аккаунт</a>
 			</div>
 		</form>
 	</div>
