@@ -6,6 +6,8 @@ body {
 	align-items: center;
 	min-height: 100vh;
 	margin: 0;
+	font-size: 16px;
+	/* Increase font size for better readability */
 }
 
 .container {
@@ -41,42 +43,46 @@ select {
 	padding: 10px;
 	border: 1px solid #ddd;
 	border-radius: 4px;
-	box-sizing: border-box;
-	/* Учитывать padding и border в ширине */
+	font-size: 16px;
+	/* Increase font size for Better Readability */
 }
 
 select {
 	appearance: none;
-	/* Удалить стандартный вид select в разных браузерах */
+	/* Remove default select appearance in different browsers */
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background-image: url('data:image/svg+xml;utf8,<svg fill="%23888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-	/* Добавляем стрелочку */
+	background-image: url('data:image/svg+xml;utf8,<svg fill="%23888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 24h24v24H0z" fill="none"/></svg>');
+	/* Add a little arrow */
 	background-repeat: no-repeat;
-	background-position-right: 10px center;
+	background-position: right 10px center;
 	padding-right: 30px;
-	/* Отступ для стрелочки */
+	/* Padding for the arrow */
 	cursor: pointer;
 }
 
 button {
 	background-color: #007bff;
-	color: white;
+	color: White;
 	padding: 10px 15px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 	width: 100%;
 	font-size: 16px;
+	/* Increase font size for better readability */
 }
 
 button:hover {
 	background-color: #0056b3;
 }
 
+
+
 .error-message {
 	color: red;
-	font-size: 12px;
+	font-size: 14px;
+	/* Increase font size for better readability */
 	margin-top: 5px;
-	display: block;
+	display: none;
 }
