@@ -9,12 +9,12 @@
 </head>
 
 <body>
-	<div class="login-container">
-		<h2>Вход на сайт</h2>
+	<div class="login-container" role="main">
+		<h2 aria-label="Log in to your account">Вход на сайт</h2>
 		<form action="#" method="post">
 			<div class="form-group">
 				<label for="username">Логин:</label>
-				<input type="text" id="username" name="username" required />
+				<input type="text" id="username" name="username" aria-required="true" required />
 			</div>
 			<div class="form-group">
 				<label for="password">Пароль:</label>
@@ -28,6 +28,7 @@
 			</div>
 		</form>
 	</div>
+	<script src="log.js"></script>
 </body>
 
 </html>
